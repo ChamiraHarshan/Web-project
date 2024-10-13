@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>User List</h1>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <input type="number" id="age" placeholder="Enter Age" required>
+        <input type="checkbox" id="isActive"> IsActive
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>IsActive</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic content will go here -->
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
