@@ -7,7 +7,6 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     addUserToTable(name, age, isActive);
     document.getElementById('userForm').reset();
 
-    // Alert after successful addition
     alert("User added successfully!");
 });
 
@@ -21,7 +20,7 @@ function addUserToTable(name, age, isActive) {
     const cell4 = newRow.insertCell(3);
     const cell5 = newRow.insertCell(4);
 
-    cell1.textContent = table.rows.length; // Row number
+    cell1.textContent = table.rows.length;
     cell2.textContent = name;
     cell3.textContent = age;
     cell4.textContent = isActive;
@@ -46,12 +45,10 @@ function editRow(row, name, age, isActive) {
     document.getElementById('isActive').checked = isActive === 1;
     row.remove();
 
-    // Alert after successful edit
     alert("User is ready for editing. Make changes and submit.");
 }
 
 function deleteRow(row) {
-    // Confirmation before deleting
     const confirmDelete = confirm("Are you sure you want to delete this user?");
     if (confirmDelete) {
         row.remove();
